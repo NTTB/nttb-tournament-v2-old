@@ -81,3 +81,12 @@ The following constants are used by the ITTF rule engine and must be set:
     - PoolId/PhaseId ("Man Halve Finale")
     - SetId ("Wedstrijd 1")
 - Mogelijk ook de GameId zo structureren, eventueel met volgnummers
+
+## Some rules about IDs since I keep forgetting them
+
+- They exist to uniquely identify an object.
+- They are immutable.
+- They are used to identify an object in a database.
+- They are used to identify an object in a message.
+- They should be simple (preferably a single GUID).
+- They should NOT be composed of multiple values (e.g. a match id should not be composed of a tournament id and a match number).
