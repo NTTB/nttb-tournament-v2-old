@@ -10,7 +10,6 @@ public record EventMap(string Key, Type Type)
         new EventMap(SetTeam.TYPENAME, typeof(SetTeam)),
         
         // And after the coin flip they decide the play sides and the service order.
-        new EventMap(ChangeSide.TYPENAME, typeof(ChangeSide)),
         new EventMap(SetOrderOfPlay.TYPENAME, typeof(SetOrderOfPlay)),
         
         // TODO: Then the clock for warming up starts, stops.
