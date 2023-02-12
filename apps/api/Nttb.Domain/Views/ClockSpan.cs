@@ -3,7 +3,7 @@ namespace Nttb.Domain.Set;
 /// <summary>
 ///     Describes when a clock started to run and when it was stopped.
 /// </summary>
-public class SetClockSpan
+public class ClockSpan
 {
     /// <summary>
     ///     When was the clock started (the time is always that of the author of the event)

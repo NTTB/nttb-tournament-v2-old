@@ -33,5 +33,5 @@ public class ClockView
     /// <summary>
     ///     All recorded usages of the clock.
     /// </summary>
-    public required IEnumerable<SetClockSpan> Usages { get; init; }
+    public required IEnumerable<ClockSpan> Usages { get; init; }
 }
