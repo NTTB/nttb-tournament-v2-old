@@ -8,7 +8,7 @@ namespace Nttb.Domain.Set.ValueObjects;
 ///     used to identify the source without requiring personal information about the user, author or device. It can be
 ///     used to distinguish the various devices (and apps) that a user might have.
 /// </param>
-/// <param name="ApplicationInfo">
+/// <param name="Application">
 ///     (not to be trusted) The application that authored the event, mostly for diagnostic purposes and to optionally
 ///     promote other clients.
 /// </param>
