@@ -5,7 +5,7 @@ namespace Nttb.Domain.Events;
 /// <summary>
 /// The event data of when a team is set.
 /// </summary>
-public sealed class SetTeam : ISetEventBody
+public sealed class SetTeamEvent : ISetEventBody
 {
     /// <summary>
     /// The public name of this event type (should be public so that we can identify the type of an event).

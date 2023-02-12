@@ -7,7 +7,7 @@ public record EventMap(string Key, Type Type)
         // Events are listed in the order they are expected to be used.
         
         // Before the game starts we first determine the players (in single games we likely already know this).
-        new EventMap(SetTeam.TYPENAME, typeof(SetTeam)),
+        new EventMap(SetTeamEvent.TYPENAME, typeof(SetTeamEvent)),
         
         // And after the coin flip they decide the play sides and the service order.
         new EventMap(SetOrderOfPlay.TYPENAME, typeof(SetOrderOfPlay)),
