@@ -22,4 +22,8 @@
       <ProjectReference Include="..\Nttb.Domain\Nttb.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Game\ValueObjects" />
+    </ItemGroup>
+
 </Project>
