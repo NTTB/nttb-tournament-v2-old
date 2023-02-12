@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-namespace Nttb.Domain.Game.ValueObjects;
+﻿namespace Nttb.Domain;
 
 /// <summary>
 ///     Contains the score of a game.

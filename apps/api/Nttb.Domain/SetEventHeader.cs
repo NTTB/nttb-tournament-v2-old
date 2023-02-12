@@ -1,6 +1,4 @@
-using Nttb.Domain.Set.ValueObjects;
-
-namespace Nttb.Domain.Set.Entities;
+namespace Nttb.Domain;
 
 /// <summary>
 ///     The header of an event.

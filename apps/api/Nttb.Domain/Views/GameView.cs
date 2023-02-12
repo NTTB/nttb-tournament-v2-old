@@ -1,7 +1,4 @@
-using Nttb.Domain.Game.ValueObjects;
-using Nttb.Domain.Player.ValueObjects;
-
-namespace Nttb.Domain.Set;
+namespace Nttb.Domain.Views;
 
 /// <summary>
 /// A view of a game in a set.
@@ -46,18 +43,18 @@ public class GameView
     ///     Clocks associated with the home team.
     ///     NOTE: Under ITTF circumstances there is no clock associated with the home team.
     /// </summary>
-    public required IEnumerable<ClockView> HomeClocks { get; init; }
+    public required IEnumerable<CountDownClock> HomeClocks { get; init; }
 
     /// <summary>
     ///     Clocks associated with the away team.
     ///     NOTE: Under ITTF circumstances there is no clock associated with the home team.
     /// </summary>
-    public required IEnumerable<ClockView> AwayClocks { get; init; }
+    public required IEnumerable<CountDownClock> AwayClocks { get; init; }
 
     /// <summary>
     ///     Clocks associated with neither the home or away team.
     ///     NOTE: Under ITTF circumstances there is only one clock associated with the game and that is the "prepare-game"
     ///     clock.
     /// </summary>
-    public required IEnumerable<ClockView> GameClocks { get; init; }
+    public required IEnumerable<CountDownClock> GameClocks { get; init; }
 }

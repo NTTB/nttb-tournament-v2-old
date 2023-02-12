@@ -1,5 +1,3 @@
-using Nttb.Domain.Set;
-
 namespace Nttb.Domain.Views;
 
 /// <summary>A enum describing the state of a set</summary>
@@ -9,16 +7,17 @@ public enum StatusOfSet
     NotStarted,
 
     /// <summary>
-    /// The set is in progress
+    ///     The set is in progress
     /// </summary>
     InProgress,
 
     /// <summary>
-    /// The set is halted by the referee until a later time.
+    ///     The set is halted by the referee until a later time and date.
     /// </summary>
     /// <remarks>
     ///     Not to be confused with <see cref="StatusOfGame" /> that is <see cref="StatusOfGame.Paused" /> since that describes
-    ///     a temporary state. This is more for situations where the set can no longer be continued to play.
+    ///     a temporary state. This is more for situations where the set can no longer be continued to play. For example when
+    ///     the roof collapses.
     /// </remarks>
     Halted,
 

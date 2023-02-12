@@ -1,5 +1,3 @@
-using Nttb.Domain.Set;
-
 namespace Nttb.Domain.Views;
 
 /// <summary>

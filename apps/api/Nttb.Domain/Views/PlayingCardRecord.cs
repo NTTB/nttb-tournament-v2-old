@@ -1,6 +1,4 @@
-using Nttb.Domain.Player.ValueObjects;
-
-namespace Nttb.Domain.Set;
+namespace Nttb.Domain.Views;
 
 /// <summary>
 /// A record of a card that was given to the player

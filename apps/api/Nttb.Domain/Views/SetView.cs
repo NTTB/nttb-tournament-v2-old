@@ -1,8 +1,6 @@
-﻿using Nttb.Domain.Game.ValueObjects;
-using Nttb.Domain.RuleEngine.ValueObjects;
-using Nttb.Domain.Views;
+﻿using Nttb.Domain.RuleEngines;
 
-namespace Nttb.Domain.Set;
+namespace Nttb.Domain.Views;
 
 /// <summary>
 ///     Describes the set including the current score, clock states and the current state. It should have enough
@@ -47,19 +45,19 @@ public class SetView
     ///     The clocks in a set, associated with the home team.
     ///     NOTE: Under ITTF there are only two: Timeout and MedicalTimeout
     /// </summary>
-    public required IEnumerable<ClockView> HomeClocks { get; init; }
+    public required IEnumerable<CountDownClock> HomeClocks { get; init; }
 
     /// <summary>
     ///     The clocks in a set, associated with the away team.
     ///     NOTE: Under ITTF there are only two: Timeout and MedicalTimeout
     /// </summary>
-    public required IEnumerable<ClockView> AwayClocks { get; init; }
+    public required IEnumerable<CountDownClock> AwayClocks { get; init; }
 
     /// <summary>
     ///     The clocks in a set, associated with neither team.
     ///     NOTE: Under ITTF there can be a few, for example: Warming up, waiting for player, etc.
     /// </summary>
-    public required IEnumerable<ClockView> SetClocks { get; init; }
+    public required IEnumerable<CountDownClock> SetClocks { get; init; }
 
     /// <summary>
     ///     Cards that participants have before the set and that are relevant for the match.

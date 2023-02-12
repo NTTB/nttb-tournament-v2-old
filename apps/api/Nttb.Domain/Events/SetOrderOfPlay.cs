@@ -1,5 +1,3 @@
-using Nttb.Domain.Player.ValueObjects;
-
 namespace Nttb.Domain.Events;
 
 /// <summary>
@@ -18,7 +16,7 @@ public sealed class SetOrderOfPlay : ISetEventBody
     public required ParticipantId Server { get; init; }
 
     /// <summary>
-    ///     The first receiver
+    ///     The first receiver (required for doubles)
     /// </summary>
     public required ParticipantId Receiver { get; init; }
 

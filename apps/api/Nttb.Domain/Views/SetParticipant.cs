@@ -1,6 +1,4 @@
-using Nttb.Domain.Player.ValueObjects;
-
-namespace Nttb.Domain.Set;
+namespace Nttb.Domain.Views;
 
 /// <summary>
 /// A participant in a set.

@@ -1,4 +1,4 @@
-namespace Nttb.Domain.Set.ValueObjects;
+namespace Nttb.Domain;
 
 /// <summary>
 ///     The signature of an event in a set.
