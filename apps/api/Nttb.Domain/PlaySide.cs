@@ -2,16 +2,17 @@ namespace Nttb.Domain;
 
 /// <summary>
 /// Describes the sides of the table tennis court, we use the referee's perspective to determine the side.
+/// The head referee always look North
 /// </summary>
 public enum PlaySide
 {
     /// <summary>
-    /// Playing left from the referee.
+    /// Playing west from the referee (so left if you are looking in the same direction as the head referee)
     /// </summary>
-    Left = 0,
+    West = -1,
     
     /// <summary>
-    /// Playing right from the referee.
+    /// Playing east from the referee (so right if you are looking in the same direction as the head referee)
     /// </summary>
-    Right = 1
+    East = 1
 }
