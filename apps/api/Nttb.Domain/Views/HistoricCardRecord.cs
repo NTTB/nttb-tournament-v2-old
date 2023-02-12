@@ -5,7 +5,7 @@ namespace Nttb.Domain.Set;
 /// <summary>
 /// A record of a card that was given to a participant prior to the set a.
 /// </summary>
-public class PriorCardRecord
+public class HistoricCardRecord
 {
     /// <summary>
     /// The participant that was given the card.

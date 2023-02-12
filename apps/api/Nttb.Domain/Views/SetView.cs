@@ -62,9 +62,9 @@ public class SetView
     public required IEnumerable<ClockView> SetClocks { get; init; }
 
     /// <summary>
-    ///     Cards that participants have before the set.
+    ///     Cards that participants have before the set and that are relevant for the match.
     /// </summary>
-    public required IEnumerable<PriorCardRecord> CardsBefore { get; init; }
+    public required IEnumerable<HistoricCardRecord> HistoricCards { get; init; }
 
     /// <summary>
     ///     Cards that participants were given during the set.
