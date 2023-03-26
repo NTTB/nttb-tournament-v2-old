@@ -1,0 +1,20 @@
+﻿namespace Nttb.Domain.Test;
+
+public class UserIdTests
+{
+    [Test]
+    public void Constructor()
+    {
+        var newGuid = Guid.NewGuid();
+        var sut = new UserId(newGuid);
+        Assert.That(sut.Value, Is.EqualTo(newGuid));
+    }
+    
+    [Test]
+    public void CreateUnique_should_return_a_new_id_with_a_value()
+    {
+        var sut = UserId.CreateUnique();
+        Assert.That(sut.Value, Is.InstanceOf<Guid>());
+        Assert.That(sut.Value, Is.Not.EqualTo(Guid.Empty));
+    }
+}

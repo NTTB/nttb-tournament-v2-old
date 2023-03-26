@@ -1,0 +1,27 @@
+<body>
+  <app-nav-menu></app-nav-menu>
+  <main class="container">
+    <router-outlet></router-outlet>
+
+
+    <form>
+    <label>
+      Username
+      <input type="text" [(ngModel)]="name" />
+    </label>
+    <label>
+      Message
+      <input type="text" [(ngModel)]="message" />
+    </label>
+    
+    <button (click)="send()" [disabled]="!isConnected">{{isConnected ? "Send" : "Connecting..."}}</button>
+    </form>
+    
+    <div *ngFor="let msg of allMessages">
+      <blockquote>
+      <div>{{msg.user}} says:</div>
+      <div>{{msg.message}}</div>
+      </blockquote>
+    </div>
+  </main>
+</body>

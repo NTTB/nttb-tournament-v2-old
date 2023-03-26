@@ -1,7 +1,17 @@
 ﻿namespace Nttb.Domain;
 
-/// <summary>
-/// The id of a set.
-/// </summary>
-/// <param name="Value">The value to identify</param>
-public record SetId(Guid Value);
+public record SetId(Guid Value)
+{
+    public static SetId CreateUnique()
+    {
+        return new SetId(Guid.NewGuid());
+    }
+}
+
+public record SetCommitId(Guid Value)
+{
+    public static SetCommitId CreateUnique()
+    {
+        return new SetCommitId(Guid.NewGuid());
+    }
+}
