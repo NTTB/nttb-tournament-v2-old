@@ -1,5 +1,8 @@
 # README
 
+> # DEPRECATED
+> This version is deprecated for a new version. This version will only exist as long as a form of documentation.
+
 ## Introduction 
 
 The original nttb-tournament project had a few limitations which will be addressed in V2.
